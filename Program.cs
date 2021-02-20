@@ -12,17 +12,15 @@ namespace Login
             var Senha = Console.ReadLine(); //setar uma senha para o usuario
             Console.WriteLine($"\nOla, {nome}!Confirme sua senha.");
             var pass = Console.ReadLine();//Confirmar a senha do usuario
-            
+
             if(Senha == pass)//execução caso a senha seja correta
-            {
-              Console.WriteLine("Bem vindo, Guilherme, Tenha um otimo serviço!");                    
+            {  
+             Console.WriteLine("Bem vindo, {0}, Tenha um otimo serviço!",nome);                   
              }
             else //execução caso a senha seja incorreta
             {
              Console.WriteLine("Senha incorreta..");             
-            }
-
-        }
-        
-        }
+          }
+        }        
+      }
     }
